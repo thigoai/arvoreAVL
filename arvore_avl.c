@@ -1,3 +1,5 @@
+#include <arvore_avl.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -60,38 +62,4 @@ arvore_avl* criar_novo_no(int valor) {
     return novo_no;
 }
 
-
-
-int main() {
-    // Criando a árvore
-    arvore_avl* raiz = criar_novo_no(30);
-    raiz->dir = criar_novo_no(40);
-    raiz->esq = criar_novo_no(20);
-    raiz->dir->dir = criar_novo_no(50);
-    raiz->dir->esq = criar_novo_no(35);
-
-    // Exibindo a árvore antes da rotação
-    printf("Árvore antes da rotação:\n");
-    printf("        %d\n", raiz->valor);
-    printf("       /   \\\n");
-    printf("     %d       %d\n", raiz->esq->valor, raiz->dir->valor);
-    printf("           /   \\\n");
-    printf("         %d       %d\n", raiz->dir->esq->valor, raiz->dir->dir->valor);
-    
-    // Realizando a rotação à esquerda
-    raiz = rotacao_esquerda(raiz);
-
-    // Exibindo a árvore após a rotação
-    printf("\nÁrvore após rotação à esquerda:\n");
-    printf("        %d\n", raiz->valor);
-    printf("       /   \\\n");
-    printf("     %d       %d\n", raiz->esq->valor, raiz->dir->valor);
-    printf("    /   \\\n");
-    printf("  %d       %d\n", raiz->esq->esq->valor, raiz->esq->dir->valor);
-
-    // Exibindo o novo valor da raiz
-    printf("\nNovo valor da raiz: %d\n", raiz->valor);
-
-    return 0;
-}
 
