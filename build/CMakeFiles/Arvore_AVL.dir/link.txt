@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/Arvore_AVL.dir/src/main.c.o CMakeFiles/Arvore_AVL.dir/src/arvore_avl.c.o -o Arvore_AVL 
