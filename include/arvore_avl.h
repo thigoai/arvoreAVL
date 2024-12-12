@@ -2,7 +2,7 @@
 
 typedef struct arvore_avl {
   int valor;
-  int altura;
+  int alturaMaxima;
   int altura_dir;
   int altura_esq;
 
@@ -12,6 +12,12 @@ typedef struct arvore_avl {
 } arvore_avl;
 
 int calcular_altura(arvore_avl *arv);
+
+void mostrarEmOrdem(arvore_avl *arv);
+
+void mostrarPreOrdem(arvore_avl *arv);
+
+void mostrarPosOrdem(arvore_avl *arv);
 
 arvore_avl *rotacao_esquerda(arvore_avl *raiz);
 
