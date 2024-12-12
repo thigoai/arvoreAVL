@@ -1,0 +1,3 @@
+/home/thiago.freire.017/arvoreAVL/build/CMakeFiles/Arvore_AVL.dir
+/home/thiago.freire.017/arvoreAVL/build/CMakeFiles/edit_cache.dir
+/home/thiago.freire.017/arvoreAVL/build/CMakeFiles/rebuild_cache.dir
