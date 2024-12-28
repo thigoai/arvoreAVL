@@ -1,7 +1,7 @@
 # Compilar
-mkdir build
-cd build
-./Arvore_AVL
+- mkdir build
+- cd build
+- ./Arvore_AVL
 
 # Gerar imagens
-./../gerar_imagens.sh
+- ./../gerar_imagens.sh
